@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(95, 198, 232), rgb(193, 215, 104));
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: rgb(7, 9, 10);
+  }
+ .container {
+    height: 25rem;
+    width: 20rem;
+    background-color: rgb(209, 233, 213);
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 16px;
+    border: 2px solid rgb(14, 43, 1);
+  }
+button {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 15px 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+  }
+
+input {
+    -webkit-animation:none;
+  }
+
+button, input {
+    border: none;
+    background: rgb(95, 198, 232);
+    outline: none;
+    color: inherit;
+}
+
+button:hover {
+    background-color: rgb(193, 215, 104);
+}
+
+form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+ 
+form input {
+    font-size: 2rem;
+    height: 40px;
+    padding: 5px 5px 10px;
+    border-bottom: 1px solid;
+}
+ 
+form input::placeholder {
+    color: currentColor;
+}
+ 
+span .msg {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    max-width: 450px;
+    min-height: 40px;
+}
+
+.display-2 {
+  font-size: 2rem;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+ form {
+    flex-direction: column;
+  }
+   
+ form input,
+ button {
+    width: 100%;
+  }
+ 
+ button {
+    margin: 20px 0 0 0;
+  }
+   
+ span .msg {
+    position: static;
+    max-width: none;
+    min-height: 0;
+    margin-top: 10px;
+  }
+}
