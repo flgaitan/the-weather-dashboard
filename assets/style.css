@@ -33,9 +33,9 @@ button {
     border-radius: 5px;
   }
 
-input {
-    -webkit-animation:none;
-  }
+/*input {
+  
+  }*/
 
 button, input {
     border: none;
