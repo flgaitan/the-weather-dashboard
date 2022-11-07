@@ -55,10 +55,32 @@ function getApi(e) {
           .then (function (data){
             console.log(data)
             list = data.list 
-            for (let i=0; i<list.length; i+=8){
+           // for (let i=0; i<list.length; i+=8){
+           /* for (let i = 0; i < list.length; i+=8) {
+              let fiveDayTemp = list[i].temp;
+              let fiveDayHumid = list[i].humidity;
+              let fiveDayWind = list[i].wind; 
+              console.log(fiveDayTemp, fiveDayHumid, fiveDayWind);
 
-            }
+              document.getElementById("temp" + (i + 1)).innerHTML = `Temperature : ` + Number(fiveDayTemp).toFixed(1) + "°";
+              document.getElementById("humid" + (i + 1)).innerHTML = `Humidity : `  + Number(fiveDayHumid).toFixed(1);
+              document.getElementById("windy" + (i + 1)).innerHTML = `Wind : `  + Number(fiveDayHumid).toFixed(1);
+              }
+
+      
+          //}
+          
+           // } */
           })
+
+   /* function fiveDayForecast(){
+      let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+      let monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+
+    } */
+
+
 
     }
     startbtn.addEventListener('click', getApi)
@@ -67,14 +89,4 @@ function getApi(e) {
 
 
 
-  /*const options = {
-    method: 'GET', 
-      'weatherApiKey': '7255f5232023240c0207da364db70563'
-  } 
-  
-  fetch('http://api.openweathermap.org/geo/1.0/direct?q=chicago,il,usa&limit=5&appid=7255f5232023240c0207da364db70563', options)
-
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err))*/
-  
+ 

@@ -1,2 +1,59 @@
-# the-weather-dashboard
-IN this project we are creating a functional weather dashboard displaying weather in different cities.
+# <The-Weather-dashboard>
+
+## Description
+In this project we are creating a functional weather dashboard displaying weather in different cities.
+
+- What was your motivation?
+The motivation for this project was to create a weather application that would fetch weather data from the weather API and to be able to successfull display that information on the page.
+
+- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+This project was built as a way to get us comfortable working with API's and fetching date from the source. The challenge begins with displaying the information on the page and it only builds from there.
+
+- What problem does it solve?
+This project solves not knowing what the weather will be like. Let's say you're planning a trip and you want to pack your outfits accordingly, it is a great tool to have access to weather data to see current weather and weather days in advance, although weather conditions can always change.
+
+- What did you learn?
+I learned the most working with the API and successfully figuring out how to fetch its data. I also learned how to make an API key and use it successfully. I learned about the objects in the data that was fetched and how the right API can either provide you with all of what you need or can challenge you in terms on figuring out how to make it work for what you are trying to display to the user on the page. For example, this API only works in three hour increments for a fourday forecast, so figuring out when the day is over during those times periods it's a challenge of its own. I found that displaying that data is particularly challenging.
+
+
+## Usage
+
+Provide instructions and examples for use. Include screenshots as needed.
+
+To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+
+![alt text](assets/images/screenshot.png)
+
+## Credits
+
+List your collaborators, if any, with links to their GitHub profiles.
+
+If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+
+If you followed tutorials, include links to those here as well.
+
+## License
+
+N/A
+
+---
+
+🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+
+## Badges
+
+![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+
+Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+
+## Features
+
+If your project has a lot of features, list them here.
+
+## How to Contribute
+
+If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+
+## Tests
+
+Go the extra mile and write tests for your application. Then provide examples on how to run them here.
