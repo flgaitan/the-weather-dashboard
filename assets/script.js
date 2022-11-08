@@ -31,10 +31,13 @@ function getApi(e) {
       let tempData = data.main.temp
       let windSpeed = data.wind.speed
       let humidityConditions = data.main.humidity
+      //let weathericon = data.weather.icon
+  
       //displaying current day data
       document.getElementById('temp').innerHTML = `Temperature: ${tempData} \u00B0F` 
       document.getElementById('windy').innerHTML = `Wind:  ${windSpeed} MPH`
       document.getElementById('humid').innerHTML = `Humidity:  ${humidityConditions} %`
+      //document.getElementById('w-icon').innerHTML = `${weathericon}`
       forecastData(cityName)
 
     })
@@ -54,7 +57,7 @@ function forecastData(city) {
       var actualTime = list.dt;
       var actualDateFormat = new Date(actualTime * 1000);
       console.log(actualTime, actualDateFormat)
-      //for (let i=0; i<list.length; i+=8){
+
       let xtime = 0;
       for (let i = 7; i < list.length; i += 8) {
         //console.log(xtime);
@@ -64,18 +67,32 @@ function forecastData(city) {
         document.querySelector(`.fpannel${xtime}Temp`).textContent = "Temperature: " + list[i].main.temp + "\u00B0F";
         document.querySelector(`.fpannel${xtime}Wind`).textContent = "Wind: " + list[i].wind.speed + "MPH";
         document.querySelector(`.fpannel${xtime}Humidity`).textContent = "Humidity Conditions: " + list[i].main.humidity + "%";
+        document.querySelector(`.fpannel${xtime}icon`).src = "http://openweathermap.org/img/wn/" + list[i].weather[0].icon + ".png";
         xtime ++;
       };
+
+       //localStorage function
+      /*function storeWeather(){
+        $("ul").empty();
+        let searchedCity = JSON.parse(localStorage.getItem("citysearched"));
+        if(searchedCity!==null){
+          searchedCity = JSON.parse(localStorage.getItem("citysearched"));
+          for(i=0; i<searchedCity.length; i++){
+            addtoList(searchedCity[i]);
+          }
+          city = searchedCity[i-1];
+          getApi(city);
+        } 
+
+      } */
 
 
     })
 
-  //forecastData();
-
-
 }
-startbtn.addEventListener('click', getApi)
 
+
+startbtn.addEventListener('click', getApi)
 
 
 
