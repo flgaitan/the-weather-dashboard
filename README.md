@@ -23,11 +23,10 @@ https://github.com/flgaitan/the-weather-dashboard
 
 
 DEPLOYED WEBSITE LINK :
+https://flgaitan.github.io/the-weather-dashboard/
 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
+![alt text](./assets/images/Screenshot%202022-weather-app.png)
 
 ## Credits
 

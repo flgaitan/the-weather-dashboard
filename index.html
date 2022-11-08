@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!--<link rel="stylesheet" href="http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={7255f5232023240c0207da364db70563}"-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
-    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-    <link rel="stylesheet" href="./assets/style.css"/>
-    <title>The Weather Dashboard</title>
-  </head>
-  <body>
-    <header>
-      <h1 class="display-1">Your daily weather forecast.</h1>
-      <h2 class="display-2">Current Time &amp; Date: <br/> <span id="timeclock-display">00:00:00</span></h2>
-    </header>
 
-    <body>
-      <form>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!--<link rel="stylesheet" href="http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={7255f5232023240c0207da364db70563}"-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <link rel="stylesheet" href="./assets/style.css" />
+  <title>The Weather Dashboard</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="display-1">Your daily weather forecast.</h1>
+    <h2 class="display-2">Current Time &amp; Date: <br /> <span id="timeclock-display">00:00:00</span></h2>
+  </header>
+
+  <body>
+    <form>
       <input type="text-input" id="city-input" placeholder="Search for a city" autofocus></input>
       <button id="submit-Btn" type="text-input-btn">SUBMIT</button>
       <span class="msg"></span>
@@ -34,44 +37,49 @@
         <div id="weather-display" class="icon"></div>
       </div>
       <div class="fpannel">
-        <h3>Four Day forecast: </h3>
+        <h3>Four Day forecast:</h3>
         <div class="row mt-4">
           <div class="col-md-2">
-            <div class="fpannel-Summary"></div>
-            <div class="fpannel-Temp"></div>
-            <div class="fpannel-Wind"></div>
-            <div class="fpannel-Humidity"></div>
-            <div class="fpannel-icon"></div>
-        </div>
-         <!--<div class="col-md-2">
-          <div class="fpannel-d3-Summary"></div>
-          <div class="fpannel-d3-Temp"></div>
-          <div class="fpannel-d3-Wind"></div>
-          <div class="fpannel-d3-Humidity"></div>
-          <div class="fpannel-d3-icon"></div>
-        </div>
-        <div class="col-md-2">
-          <div class="fpannel-d4-Summary"></div>
-          <div class="fpannel-d4-Temp"></div>
-          <div class="fpannel-d4-Wind"></div>
-          <div class="fpannel-d4-Humidity"></div>
-          <div class="fpannel-d4-icon"></div>
-        </div>
-        <div class="col-md-2">
-          <div class="fpannel-d5-Summary"></div>
-          <div class="fpannel-d5-Temp"></div>
-          <div class="fpannel-d5-Wind"></div>
-          <div class="fpannel-d5-Humidity"></div>
-          <div class="fpannel-d5-icon"></div>
-        </div>
-        <h7></h7>-->
+            <div class="fpannel0Summary"></div>
+            <div class="fpannel0Temp"></div>
+            <div class="fpannel0Wind"></div>
+            <div class="fpannel0Humidity"></div>
+            <div class="fpannel0icon"></div>
+          </div>
+          <div class="col-md-2">
+            <div class="fpannel1Summary"></div>
+            <div class="fpannel1Temp"></div>
+            <div class="fpannel1Wind"></div>
+            <div class="fpannel1Humidity"></div>
+            <div class="fpannel1icon"></div>
+          </div>
+          <div class="col-md-2">
+            <div class="fpannel2Summary"></div>
+            <div class="fpannel2Temp"></div>
+            <div class="fpannel2Wind"></div>
+            <div class="fpannel2Humidity"></div>
+            <div class="fpannel2icon"></div>
+          </div>
+          <div class="col-md-2">
+            <div class="fpannel3Summary"></div>
+            <div class="fpannel3Temp"></div>
+            <div class="fpannel3Wind"></div>
+            <div class="fpannel3Humidity"></div>
+            <div class="fpannel3icon"></div>
+          </div>
+          <div class="col-md-2">
+            <div class="fpannel4Summary"></div>
+            <div class="fpannel4Temp"></div>
+            <div class="fpannel4Wind"></div>
+            <div class="fpannel4Humidity"></div>
+            <div class="fpannel4icon"></div>
+          </div>
         </div>
       </div>
-      
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
       <script src="./assets/script.js"></script>
 
-    </body>
-  </html>
-  
+  </body>
+
+</html>

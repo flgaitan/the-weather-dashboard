@@ -5,7 +5,7 @@
   }
 body {
     height: 100vh;
-    display:flex;
+    display:inline-flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
@@ -14,15 +14,6 @@ body {
     font-family: sans-serif;
     color: rgb(7, 9, 10);
   }
- /*.container {
-    height: 15rem;
-    width: 10rem;
-    background-color: rgb(209, 233, 213);
-    text-align: center;
-    padding-top: 12px;
-    border-radius: 16px;
-    border: 2px solid rgb(14, 43, 1); 
-  } */
   
 button {
     cursor: pointer;
@@ -33,10 +24,6 @@ button {
     margin-left: 15px;
     border-radius: 5px;
   }
-
-/*input {
-  
-  }*/
 
 button, input {
     border: none;
@@ -78,17 +65,23 @@ span .msg {
   font-size: 2rem;
 }
 
+h3 {
+  color: yellow;
+
+}
 
 
 
 
 
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 580px) {
  form {
     flex-direction: column;
   }
-   
+  body {
+    display: flex;
+  } 
+
  form input,
  button {
     width: 100%;
